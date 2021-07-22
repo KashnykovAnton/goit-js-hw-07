@@ -19,5 +19,4 @@ const makeImgList = images.map(el => {
   return `<li class = 'list_item'><img class = 'img_item' src = ${el.url} alt = ${el.alt}></li>`;
 });
 
-galleryList.insertAdjacentHTML('beforeend', makeImgList);
-console.log(galleryList);
+galleryList.insertAdjacentHTML('beforeend', makeImgList.join(''));
